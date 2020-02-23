@@ -2,7 +2,11 @@
   <div>
     <h1>Dashboard</h1>
     <template v-if="!isLoading">
-      <EventCard v-for="event in events" :key="event.id" :event="event" />
+      <EventCard
+        v-for="event in events"
+        :key="event.id"
+        :event="event"
+      />
     </template>
     <p v-else>
       Loading events
